@@ -28,6 +28,10 @@ app.controller('sportCtrl', function($scope, $http) {
         $scope.feedbacks = response.data;
 
     });
+    $http.get("assets/json/feedbacks-R.json").then(function(response) {
+        $scope.feedbacksR = response.data;
+
+    });
     $http.get("assets/json/programs.json").then(function(response) {
         $scope.programs = response.data;
 
