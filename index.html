@@ -16,7 +16,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Run 4U | set your goal &amp; run it</title>
-    <!-- <title>Swim4U | set your goal & swim it</title> -->
     <meta property="og:title" content="Run 4U | set your goal &amp; run it" />
     <meta property="og:description" content="Ми спортсмени-аматори, подорожуємо по світу, долаючи кілометри біжучи, пливучи та крутячи педалі. " />
     <meta property="og:image" content="https://shuandr.github.io/Swim4U/OG_img-run.jpg">
@@ -238,6 +237,34 @@
             </div><br>
             <p class="text-center">© Всі права застережено. 2020</p><br>
         </footer></div>
+    
+    <!-- Load Facebook SDK for JavaScript -->
+          <div id="fb-root"></div>
+          <script>
+            window.fbAsyncInit = function() {
+              FB.init({
+                xfbml            : true,
+                version          : 'v6.0'
+              });
+            };
+    
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+    
+          <!-- Your customer chat code -->
+          <div class="fb-customerchat"
+            attribution=setup_tool
+            page_id="203851440161605"
+      theme_color="#13cf13"
+      logged_in_greeting="Привіт! Радо відповімо на Ваші запитання :)"
+      logged_out_greeting="Привіт! Радо відповімо на Ваші запитання :)">
+          </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
     <script src="assets/js_plugins/myAngularR.js"></script>
