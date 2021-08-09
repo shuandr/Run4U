@@ -7,20 +7,16 @@
   "mail": "mykyta.ubyivovk@gmail.com",
   "trainPlace1": "Стадіон «Динамо» (вул. Янева, 10)",
   "trainDays1": "ВТ | ЧТ",
-  "trainTime1": "7:00",
+  "trainTime1": "7:00 | 8:30",
   "trainTime1a": "19:00",
   "trainPlace2": "Стадіон СКА (вул. Клепарівська, 39а)",
   "trainDays2": "ПН | СР ",
-  "trainTime2": "8:00",
+  "trainTime2": "7:00",
   "trainPlace3": "Стрийський парк",
   "trainDays3": "НД",
   "trainTime3": "10:00",
   "trainers": [
-    {
-      "img": "orysia_.webp",
-      "name": "Орися Дем’янюк",
-      "txt": "Майстриня спорту України з легкої атлетики.\nБагаторазова  чемпіонка України з легкої атлетики, біг 1500м (2017–2021 роки)"
-    },
+    
     {
       "img": "kostia.webp",
       "name": "Костянтин Коляда",
