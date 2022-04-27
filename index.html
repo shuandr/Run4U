@@ -71,7 +71,7 @@
         <div class="section">
             <h1 class="text-center white uppercase">наші <span class="bold ">тренери</span></h1>
             <div class="grid-container trainers">
-                <div class=" grid-x  grid-padding-x small-up-1 medium-up-2 ">
+                <div class=" grid-x  grid-padding-x small-up-1 medium-up-2">
                     <div class="cell white text-center" ng-repeat="trainer in data.trainers">
                         <img src="assets/img/{[{trainer.img}]}">
                         <h4 class="bold uppercase">{[{trainer.name}]}</h4>
@@ -88,31 +88,32 @@
                         <table class="big run-1 prog-tbl">
                             <tr>
                                 <td ng-repeat="prog in data.progIntro.prices"><span class="bold run-1 ">{[{prog.dur}]}</span><br>
-                                    <span class="bold run-2 bigger">{[{prog.prc}]}</span> грн<br>
-                                    <span class="bold run-1 ">{[{prog.prc1}]} </span>
-                                    <span class="sml-txt run-1 ">грн/тренування</span>
+                                    <span class="bold run-2 bigger">{[{prog.prc}]}</span> грн<br>———<br>
+                                    <span class="bold run-1 ">{[{prog.prc1}]} </span><br>
+                                    <span class="sml-txt run-1 ">грн/місяць</span>
                                     
                                 </td>
                             </tr>
                         </table>
                         <p class=" run-1 s-bold"> {[{data.progIntro.freeze}]}</p><br>  
+                    </div>
+                    <div class="cell large-6 text-center">
+                        <h5 class=" run-1 uppercase s-bold">В ціну включено <br>тренування в групі <br>двічі на тиждень </h5><br>
                         <h5 class=" run-2 uppercase s-bold">розклад тренувань:</h5>
                         <p class=" run-1">
                             {[{data.trainPlace1}]},
                             <span class="s-bold">{[{data.trainDays1}]}</span> 
-                            о <span class="s-bold">{[{data.trainTime1}]}</span> або <span class="s-bold">{[{data.trainTime1a}]}</span><br>
+                            о <span class="s-bold">{[{data.trainTime1}]}</span> 
+                            <!-- або <span class="s-bold">{[{data.trainTime1a}]}</span><br>
                             {[{data.trainPlace2}]},
                             <span class="s-bold">{[{data.trainDays2}]}</span> о <span class="s-bold">{[{data.trainTime2}]}</span><br>— — —<br>
                             {[{data.trainPlace3}]},
-                            <span class="s-bold">{[{data.trainDays3}]}</span> о <span class="s-bold">{[{data.trainTime3}]}</span>
+                            <span class="s-bold">{[{data.trainDays3}]}</span> о <span class="s-bold">{[{data.trainTime3}]}</span> -->
                         </p>
                         <br>
-                    </div>
-                    <div class="cell large-6">
-                        <h5 class="text-center run-2 uppercase s-bold">В ціну включено:</h5>
-                        <ol>
+                       <!--  <ol>
                             <li class="run-1 include-list" ng-repeat="x in data.progIntro.list">{[{ x }]}</li>
-                        </ol><br>
+                        </ol><br> -->
                         <p class="run-1 s-bold">{[{data.progIntro.descr}]}</p>
                         <br>
                     </div>
